@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1 :- Create one function with zero parameter having a console statement;</p>
+    <pre>
+        function hello(){
+        console.log("Hello World")
+      }
+      
+      hello()
+    </pre>
+    <p> Question 2 :- Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</p>
+    <pre>
+        function sum (a,b){
+            let sum1 = 0;
+            sum1 = a+b
+            console.log (sum1)
+          }
+          
+          sum (6,7)
+    </pre>
+    <p> Question 3 :- Create one arrow function </p>
+    <pre>
+        counter = (a) => {
+            let count = 0
+            for (i = a ; i < 100;i++){
+              if (i < 100){
+                count = count +1
+              }
+            }
+            console.log (count)
+          }
+          
+          counter (5)
+    </pre>
+    <pre>Question 4 :- "Print output: 
+        var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();"</pre>
+    <p> Ans :- It will an error "undefined" as the variable is defined after the console.log command.</p>
+    <pre>Question 5:- 
+        var x = 21;
+        girl ();
+        console.log(x)
+        function girl() {
+            console.log(x);
+            var x = 20;
+        };
+        </pre>
+    <p>Ans :- The output of th function "girl" in line no. 2 will be "undefined" as in the function the varible is defined before it's printed. <br> And then it will print 21 in the line no. 3</p>
+    <pre> question 6:- "Print output
+
+        var x = 21;
+        a();
+        b();
+        
+          function a() {
+            
+           x = 20;
+          console.log(x);
+        };
+         function b() {
+            
+            x = 40;
+           console.log(x);
+        };"
+    </pre>
+    <p> Ans:- The function "a" will get excuted and print 20 as an output. After that "b" will get executed and print 40. As variable "x" is being redefined inside the function.</p>
+    <p> Question 7 :- Write a function that accepts parameter n and returns factorial of n ?</p>
+    <pre>function factorial(n){
+        let fact = 1
+        for (i=1;i<=n;i++){
+          fact = fact * i
+        }
+        return fact
+      }
+      
+      factorial (5)
+    </pre>
+    
+</body>
+</html>
